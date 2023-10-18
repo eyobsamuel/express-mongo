@@ -1,9 +1,9 @@
 // index.js
 const express = require("express");
-const mongoose = require("mongoose");
-const mongoURL =
-  "mongodb+srv://root:root@cluster0.qytq2iu.mongodb.net/?retryWrites=true&w=majority";
-mongoose.connect(mongoURL);
+// const mongoose = require("mongoose");
+// // const mongoURL =
+// //   "mongodb+srv://root:root@cluster0.qytq2iu.mongodb.net/?retryWrites=true&w=majority";
+// // mongoose.connect(mongoURL);
 
 const app = express();
 const PORT = 4000;
