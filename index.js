@@ -1,9 +1,6 @@
 // index.js
 const express = require("express");
 const mongoose = require("mongoose");
-// // const mongoURL =
-// //   "mongodb+srv://root:root@cluster0.qytq2iu.mongodb.net/?retryWrites=true&w=majority";
-// // mongoose.connect(mongoURL);
 
 const app = express();
 const PORT = 4000;
@@ -13,6 +10,10 @@ app.listen(PORT, () => {
 });
 
 app.get("/", (req, res) => {
+  const mongoURL =
+    "mongodb+srv://root:root@cluster0.qytq2iu.mongodb.net/?retryWrites=true&w=majority";
+
+  mongoose.connect(mongoURL);
   res.send("Hey this is my API running 🥳");
 });
 
