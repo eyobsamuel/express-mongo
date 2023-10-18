@@ -7,9 +7,8 @@ const mongoURL =
 const client = new MongoClient(mongoURL, { useUnifiedTopology: true });
 
 const app = express();
-const PORT = 4000;
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log(`API listening on PORT ${PORT}`);
 });
 
